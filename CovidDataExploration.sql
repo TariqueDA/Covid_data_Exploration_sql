@@ -6,13 +6,13 @@ Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, 
 */
 
 SELECT * 
-from sql_portfolioProject..CovidDeaths
+FROM sql_portfolioProject..CovidDeaths
 WHERE continent is not null
 ORDER BY 3,4
 
 -- Select Data that we are going to be starting with
 
- SELECT Location, date, total_cases, new_cases, total_deaths, population
+SELECT Location, date, total_cases, new_cases, total_deaths, population
 FROM sql_portfolioProject..CovidDeaths
 WHERE continent is not null
 ORDER BY 1,2
